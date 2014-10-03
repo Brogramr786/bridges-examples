@@ -14,7 +14,7 @@
 	</parent>
 
 	<properties>
-		<angularjs.version>1.0.7.bv2-SNAPSHOT</angularjs.version>
+		<angularjs.version>1.2.16.bv0</angularjs.version>
 	</properties>
 	<dependencies>
 		<dependency>

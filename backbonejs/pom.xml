@@ -13,7 +13,7 @@
 	</parent>
 
 	<properties>
-		<backbonejs.version>1.0.0.bv2-SNAPSHOT</backbonejs.version>
+		<backbonejs.version>1.0.0.bv2</backbonejs.version>
 	</properties>
 	<dependencies>
 		<dependency>

@@ -24,7 +24,7 @@
 	</modules>
 
 	<properties>
-		<stjs.version>3.0.0-SNAPSHOT</stjs.version>
+		<stjs.version>3.0.3</stjs.version>
 	</properties>
 
 
