@@ -21,10 +21,11 @@
 		<module>library</module>
 		<module>html-hello</module>
 		<module>jquery-stock</module>
+		<module>reactjs</module>
 	</modules>
 
 	<properties>
-		<stjs.version>3.0.3</stjs.version>
+		<stjs.version>3.3.2</stjs.version>
 	</properties>
 
 
@@ -42,7 +43,7 @@
 			<!-- STJS -->
 			<plugin>
 				<groupId>org.st-js</groupId>
-				<artifactId>maven-plugin</artifactId>
+				<artifactId>stjs-maven-plugin</artifactId>
 				<version>${stjs.version}</version>
 				<executions>
 					<execution>
@@ -55,6 +56,7 @@
 				</executions>
 				<configuration>
 					<generateSourceMap>true</generateSourceMap>
+					<pack>true</pack>
 				</configuration>
 			</plugin>
 
@@ -115,7 +117,7 @@
 
 	</build>
 
-	
+
 	<scm>
 		<connection>scm:git:git@github.com:st-js/bridges-examples.git</connection>
 		<developerConnection>scm:git:git@github.com:st-js/bridges-examples.git</developerConnection>
