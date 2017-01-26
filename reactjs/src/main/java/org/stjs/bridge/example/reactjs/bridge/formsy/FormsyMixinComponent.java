@@ -3,7 +3,9 @@ package org.stjs.bridge.example.reactjs.bridge.formsy;
 import org.stjs.bridge.react.internal.ReactClass;
 import org.stjs.bridge.react.internal.State;
 import org.stjs.javascript.Array;
+import org.stjs.javascript.annotation.SyntheticType;
 
+@SyntheticType
 public abstract class FormsyMixinComponent<P extends FormsyMixinProps, S extends State> extends ReactClass<P, S> {
 	public native String getValue();
 

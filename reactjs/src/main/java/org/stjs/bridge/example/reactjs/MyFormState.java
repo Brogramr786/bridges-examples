@@ -5,5 +5,5 @@ import org.stjs.javascript.annotation.SyntheticType;
 
 @SyntheticType
 public class MyFormState extends State {
-
+	public String name;
 }
