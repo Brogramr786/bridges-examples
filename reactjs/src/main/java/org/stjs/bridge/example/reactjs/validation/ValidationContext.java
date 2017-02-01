@@ -55,18 +55,18 @@ public class ValidationContext {
 	}
 
 	public boolean validateField(Element elm) {
-		ValidationRule fieldValidators = validators.$get(ValidationRules.fieldName(elm));
+		ValidationRule fieldValidators = validators.$get(ValidationRule.fieldName(elm));
 		if (fieldValidators == null) {
-			console.warn("No validators for field " + ValidationRules.fieldName(elm));
+			console.warn("No validators for field " + ValidationRule.fieldName(elm));
 			return true;
 		}
 
 		Array<String> fieldErrors = fieldValidators.validate(elm);
 
 		if (fieldErrors.$length() > 0) {
-			errors.$put(ValidationRules.fieldName(elm), fieldErrors);
+			errors.$put(ValidationRule.fieldName(elm), fieldErrors);
 		} else {
-			errors.$delete(ValidationRules.fieldName(elm));
+			errors.$delete(ValidationRule.fieldName(elm));
 		}
 
 		return fieldErrors.$length() == 0;
